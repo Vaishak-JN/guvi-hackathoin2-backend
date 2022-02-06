@@ -2,7 +2,7 @@ import express from "express"
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 import { createUser, genPassword, getUserByName } from "../productFunctions.js";
-import cors from "cors"
+
 
 const router = express.Router()
 
@@ -34,7 +34,7 @@ router
 
 router
     .route('/login')
-    .post(cors(), async (req, res) => {
+    .post(async (req, res) => {
         const { username, password } = req.body
         const hashedPassword = await genPassword(password)
         const userFromDb = await getUserByName(username)
