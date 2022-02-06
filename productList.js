@@ -20,7 +20,7 @@ const products = [
     {
         "type": "camera",
         "name": "Sony camera",
-        "image": "https://www.sony.co.in/image/275b9bf4aa1ebafbd282edab2cadc220?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+        "image": "https://store.sony.com.au/dw/image/v2/ABBC_PRD/on/demandware.static/-/Sites-sony-master-catalog/default/dw156fefb2/images/ILCE3000K/ILCE3000K.png",
         "price": 2000
     },
     {
