@@ -3,7 +3,6 @@ import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 import { createUser, genPassword, getUserByName } from "../productFunctions.js";
 
-
 const router = express.Router()
 
 router
