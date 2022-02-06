@@ -13,7 +13,7 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({ origin: '*' }))
 
 // const MONGO_URL = "mongodb://localhost"
 const MONGO_URL = process.env.MONGO_URL;
