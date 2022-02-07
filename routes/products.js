@@ -1,12 +1,13 @@
 import express from "express"
 import { getProducts, createProducts, } from "../productFunctions.js"
+import { auth } from "../middleware/auth.js"
 
 const router = express.Router()
 
 
 router
     .route('/')
-    .get(async (req, res) => {
+    .get(auth, async (req, res) => {
 
         const products = await getProducts()
 
