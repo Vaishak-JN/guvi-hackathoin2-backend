@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb"
 import dotenv from "dotenv"
 import { productsRouter } from "./routes/products.js"
 import { usersRouter } from "./routes/users.js"
-import cors from "cors"
+// import cors from "cors"
 
 
 // getting all env keys
@@ -11,9 +11,7 @@ dotenv.config();
 
 const app = express()
 
-
-app.use(cors())
-
+// app.use(cors())
 
 
 // const MONGO_URL = "mongodb://localhost"
