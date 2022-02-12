@@ -8,7 +8,7 @@ const router = express.Router()
 
 router
     .route("/signup")
-    .post(async (req, res) => {
+    .post(cors(), async (req, res) => {
         const { username, password } = req.body
         const hashedPassword = await genPassword(password)
         const userExist = await getUserByName(username)
@@ -34,7 +34,7 @@ router
 
 router
     .route('/login')
-    .post(async (req, res) => {
+    .post(cors(), async (req, res) => {
         const { username, password } = req.body
         const hashedPassword = await genPassword(password)
         const userFromDb = await getUserByName(username)
